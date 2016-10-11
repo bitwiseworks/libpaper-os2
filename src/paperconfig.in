@@ -14,7 +14,7 @@ usage() {
 	echo -n u
     fi
 
-    echo "sage: `basename $0` [ -v, --version ] [ -h, --help ] [ -p, --paper name | --force ]"
+    echo "Usage: `basename $0` [ -v, --version ] [ -h, --help ] [ -p, --paper name | --force ]"
 
     if [ "$1" = -h ]
     then
