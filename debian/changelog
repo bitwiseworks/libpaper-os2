@@ -1,3 +1,45 @@
+libpaper (1.1.28) unstable; urgency=medium
+
+  * Completely fixed #927226.
+
+ -- Giuseppe Sacco <eppesuig@debian.org>  Wed, 26 Jun 2019 00:04:32 +0200
+
+libpaper (1.1.27) unstable; urgency=medium
+
+  * Fixed a circular dependency in debian/rules that left libpaper1.config
+    not built. See #927226.
+
+ -- Giuseppe Sacco <eppesuig@debian.org>  Sun, 23 Jun 2019 21:27:03 +0200
+
+libpaper (1.1.26) unstable; urgency=medium
+
+  * Check for ucf presence in the postrm script. See #916197 and #916198.
+
+ -- Giuseppe Sacco <eppesuig@debian.org>  Tue, 11 Dec 2018 11:50:45 +0100
+
+libpaper (1.1.25) unstable; urgency=medium
+
+  * Fixed C4 dimension, closes: #829203
+  * Added debian/source/format file.
+  * Updated debian/copyright in order to refer to GPL-2 instead of
+    GPL, closes: #729004
+  * Fixed several lintian warnings about debian/* files.
+  * Update to debian standard version 3.9.8 without any fix.
+  * Correctly free() memory, closes: #914815
+  * Updated paperconfig man page for run-parts, closes: #594931
+  * Changed rules in order to cross build, closes: #693968
+
+ -- Giuseppe Sacco <eppesuig@debian.org>  Sun, 09 Dec 2018 10:28:40 +0100
+
+libpaper (1.1.24+nmu5) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Non-maintainer upload.
+  * Fix /tmp file vulnerability in debian/rules clean target
+    (Closes: #841722)
+
+ -- Jonathan Wiltshire <jmw@debian.org>  Fri, 11 Nov 2016 11:28:37 +0000
+
 libpaper (1.1.24+nmu4) unstable; urgency=medium
 
   * Non-maintainer upload.
@@ -425,7 +467,7 @@ libpaper (1.1.4) unstable; urgency=low
   * Add documentation for papername, paperpswidth & paperpsheight,
   Closes: #112733
   * Prevent libpaperg from reasking for a paper size when /etc/papersize
-    exists, 
+    exists,
   Closes: #131335
 
  -- Stephen Zander <gibreel@debian.org>  Tue,  5 Feb 2002 19:54:41 -0800
@@ -553,7 +595,7 @@ libpaper (1.0.4) unstable; urgency=low
 
 libpaper (1.0.3-14) unstable; urgency=low
 
-  * Added debconf support, thaks to the patch by 
+  * Added debconf support, thaks to the patch by
     John Goerzen <jgoerzen@progenylinux.com> (Closes: Bug#70959).
 
  -- Marco Pistore <pistore@debian.org>  Tue, 12 Sep 2000 07:26:25 +0200
@@ -587,7 +629,7 @@ libpaper (1.0.3-12) unstable; urgency=low
 
   * Added sparc among the libc5 compat architectures in debian/rules
     (Closes: Bug#30173)
-  * Now function systempapername return the paper name in the correct 
+  * Now function systempapername return the paper name in the correct
     case (Closes: Bug#29911)
 
  -- Marco Pistore <pistore@di.unipi.it>  Tue,  8 Dec 1998 09:50:04 +0100

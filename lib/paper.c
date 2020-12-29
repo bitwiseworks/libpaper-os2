@@ -187,7 +187,10 @@ PAPERSIZEVAR, fall-back to the old behaviour.
 		fclose(ps);
 
 		paperstr = malloc((strlen(papername) + 1) * sizeof(char));
-		if (! paperstr) return 0;
+		if (! paperstr) {
+		    free(papername);
+		    return 0;
+		}
 
 		strcpy(paperstr, papername);
 		free(papername);
